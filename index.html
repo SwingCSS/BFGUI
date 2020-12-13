@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Brainfuck Compiler</title>
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+<body class="font-mono bg-black text-white">
+<div class="pt-6">
+    <div class="m-auto max-w-xl border-2 border-l-5 border-dashed border-white py-3 px-4">
+        <h1 class="text-center text-3xl">Brainfuck Compiler</h1>
+        <p class="text-center">Run Brainfuck in the browser.</p>
+    </div>
+    <div class="pt-6 text-center block">
+        <h1 class="text-center text-xl pb-1 transition duration-300" id="btc">8-Tag Code:</h1>
+        <textarea rows="5" cols="50" class="transition duration-300 py-2 px-2 text-left object-center text-white bg-black border-2 upper border-dashed border-white font-mono focus:border-indigo-600 focus:outline-none focus:transition focus:duration-300 focus:text-indigo-600" id="codetext">+++++++++++[->++++++++<]++++.</textarea>
+    </div>
+    <div class="pt-4 flex flex-row flex-wrap max-w-lg m-auto space-x-2 space-y-4 sm:space-y-0 sm:space-x-4">
+        <div class="flex flex-col">
+            <div class="flex flex-row max-w-2xl m-auto text-center text-center justify-center">
+                <h1 class="text-center object-center transition duration-300" id="alt">INPUT / STDIN</h1>
+            </div>
+
+            <input type="text" class="transition duration-300 py-2 px-2 text-left object-center text-white bg-black border-2 border-dashed border-white font-mono focus:outline-none placeholder-white focus:outline-none focus:border-indigo-600 focus:text-indigo-600  uppercase" id="stdin">
+        </div>
+        <div class="px-8 flex flex-row space-x-4">
+            <button class="pt-9 transition duration-300 hover:text-indigo-600 hover:border-indigo-600" id="run">Run</button>
+            <button class="pt-9 transition duration-300 hover:text-indigo-600 hover:border-indigo-600" id="c2js">Convert to JS</button>
+        </div>
+
+    </div>
+    <div class="text-center block pt-16">
+        <textarea rows="4" cols="30" class="uppercase block text-left transition duration-300 py-2 px-2 object-center text-white bg-black border-2 upper border-dashed border-white font-mono focus:border-indigo-600 focus:transition focus:duration-300 focus:text-indigo-600" id="outputtext">Hello World!</textarea>
+    </div>
+
+</div>
+<script src="js/bundle.js"></script>
+</body>
+</html>
